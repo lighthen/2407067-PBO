@@ -11,8 +11,11 @@ class Cafe{
         System.out.println("nama cafenya adalah " + this.Nama);
         System.out.println("alamatnya ada di daerah: " + this.Alamat);
     }
-    void buka() {
-        System.out.println(this.Nama + " cafe sekarang sudah buka yaa");
+    void bukaCafe1() {
+        System.out.println(this.Nama + "cafe buka tutup kalo sholat jum'at");
+    }
+    void bukaCafe2() {
+        System.out.println(this.Nama + " cafe buka sampai kiamat");
     }
 }
 
@@ -22,10 +25,10 @@ public class main {
         System.out.println("HENDRA NURFATKHURROHMAN");
         System.out.println("============cafe1===============");
         Cafe cafe1 = new Cafe("janjijiwa", "bayalangu");
-        cafe1.buka(); 
+        cafe1.bukaCafe1(); 
         System.out.println("============cafe2===============");
         Cafe cafe2 = new Cafe("kopte", "gegesik");
-        cafe2.buka();
+        cafe2.bukaCafe2();
         System.out.println("============thankYou===============");
         // cafe1.Nama = "Kopi Kenangan";
         // cafe1.Alamat = "Indramayu";
