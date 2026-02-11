@@ -12,24 +12,47 @@ class Cafe{
         System.out.println("alamatnya ada di daerah: " + this.Alamat);
     }
     void bukaCafe1() {
-        System.out.println(this.Nama + "cafe buka tutup kalo sholat jum'at");
+        System.out.println(this.Nama + "cafe masih buka tutup kalo sholat jum'at");
     }
-    void bukaCafe2() {
-        System.out.println(this.Nama + " cafe buka sampai kiamat");
+    // void bukaCafe2() {
+    //     System.out.println(this.Nama + " cafe buka sampai kiamat");
+    // }
+    public String getNama(){
+        return Nama;
     }
+
+    public void setNama(String Nama){
+        this.Nama = Nama;
+        this.Alamat = Alamat;
+    }
+
+    public String getAlamat(){
+        return Alamat;
+    }
+
+    public void setAlamat(String Alamat){
+        this.Alamat = Alamat;
+    }
+
 }
 
 //kelas main adalah untuk menampilkan program yang akan kita buat
 public class main {
     public static void main(String[] args) {
-        System.out.println("HENDRA NURFATKHURROHMAN");
         System.out.println("============cafe1===============");
         Cafe cafe1 = new Cafe("janjijiwa", "bayalangu");
-        cafe1.bukaCafe1(); 
+        cafe1.bukaCafe1();
         System.out.println("============cafe2===============");
         Cafe cafe2 = new Cafe("kopte", "gegesik");
-        cafe2.bukaCafe2();
-        System.out.println("============thankYou===============");
+        cafe2.bukaCafe1();
+        // System.out.println("HENDRA NURFATKHURROHMAN");
+        // System.out.println("============cafe1===============");
+        // Cafe cafe1 = new Cafe("janjijiwa", "bayalangu");
+        // cafe1.bukaCafe1(); 
+        // System.out.println("============cafe2===============");
+        // Cafe cafe2 = new Cafe("kopte", "gegesik");
+        // cafe2.bukaCafe2();
+        // System.out.println("============thankYou===============");
         // cafe1.Nama = "Kopi Kenangan";
         // cafe1.Alamat = "Indramayu";
         // cafe2.Nama = "kopte";
