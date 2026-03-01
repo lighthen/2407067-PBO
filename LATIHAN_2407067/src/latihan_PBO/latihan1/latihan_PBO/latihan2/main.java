@@ -51,6 +51,7 @@ public class main {
         System.out.println("==== Segitiga =====");
         Segitiga segitiga1 = new Segitiga();
         System.out.println("Luas Segitiga: " + segitiga1.luasSegitiga());
+        
     }
 }
 
