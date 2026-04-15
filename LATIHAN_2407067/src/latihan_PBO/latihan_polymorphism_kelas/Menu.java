@@ -5,9 +5,6 @@ package latihan_PBO.latihan_polymorphism_kelas;
 public class Menu {
     private String nama;
     private double harga;
-    private double hitungTotal() {
-        return 0;
-    }
 
     public Menu() {
         this.nama = "";

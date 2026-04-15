@@ -19,7 +19,7 @@ public class Main {
         System.out.println("==============================");
         System.out.println("Pesanan:");
         System.out.println("Menu Item: " + item1.getNama());
-        System.out.println("Harga per item: " + item1.getHarga() + " dikali jumlah pesanan: " + item1.getJumlah() + " sama dengan total harga : " + item1.hitungHarga());
+        System.out.println("Harga per item: " + item1.getHarga() + " x " + item1.getJumlah() + " sama dengan total harga : " + item1.hitungHarga());
 
         System.out.println("Menu Item: " + item2.getNama());
         System.out.println("Harga per item: " + item2.getHarga() + " dikali jumlah pesanan: " + item2.getJumlah() + " sama dengan total harga : " + item2.hitungHarga());

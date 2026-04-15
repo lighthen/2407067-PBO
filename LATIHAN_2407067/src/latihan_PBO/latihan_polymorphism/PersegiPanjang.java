@@ -10,24 +10,26 @@
 
 package latihan_PBO.latihan_polymorphism;
 public class PersegiPanjang extends BangunDatar {
+    // Persegi panjang butuh 2 parameter: panjang dan lebar
     public PersegiPanjang(double panjang, double lebar) {
-        super(panjang, lebar); // Menggunakan constructor dengan 2 parameter dari kelas induk
+        super(panjang, lebar);
     }
 
+    // Override hitungLuas: panjang x lebar
     @Override
     public double hitungLuas() {
-        double panjang = super.hitungLuas(); // Mengambil nilai varA sebagai panjang
-        double lebar = super.hitungLuas(); // Mengambil nilai varB sebagai lebar
-        return panjang * lebar; // Luas persegi panjang = panjang * lebar
+        return getVarA() * getVarB();
     }
 
+    // Override tampilkan dengan format khusus Persegi Panjang
     @Override
     public void tampilkan() {
         System.out.println("Persegi Panjang");
-        System.out.println("==================");
-        System.out.println("panjang : " + super.hitungLuas()); // Menampilkan nilai varA sebagai panjang
-        System.out.println("lebar : " + super.hitungLuas()); // Menampilkan nilai varB sebagai lebar
-        System.out.println("luas : " + hitungLuas()); // Menampilkan hasil   
-        System.out.println("==================");
+        System.out.println("================");
+        System.out.println("Panjang: " + getVarA());
+        System.out.println("Lebar: " + getVarB());
+        System.out.println("================");
+        System.out.println("Luas: " + hitungLuas());
+        System.out.println();
     }
-}                               
+}
